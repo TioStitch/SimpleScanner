@@ -4,37 +4,37 @@
 #include <sys/types.h>
 
 int nextInt() {
-    int *i = malloc((sizeof(int)));
+    int *i = (int *) malloc((sizeof(int)));
     scanf("%d", i);
     return *i;
 }
 
 float nextFloat() {
-    float *i = malloc((sizeof(float)));
+    float *i = (float *) malloc((sizeof(float)));
     scanf("%f", i);
     return *i;
 }
 
 double nextDouble() {
-    double *i = malloc((sizeof(double)));
+    double *i = (double *) malloc((sizeof(double)));
     scanf("%lf", i);
     return *i;
 }
 
 bool nextBoolean() {
-    bool *i = malloc((sizeof(bool)));
+    bool *i = (bool *) malloc((sizeof(bool)));
     scanf("%c", i);
     return *i;
 }
 
 short nextShort() {
-    short *i = malloc((sizeof(short)));
+    short *i = (short *) malloc((sizeof(short)));
     scanf("%hi", i);
     return *i;
 }
 
-float nextLong() {
-    long *i = malloc((sizeof(long)));
+long nextLong() {
+    long *i = (long *) malloc((sizeof(long)));
     scanf("%ld", i);
     return *i;
 }
